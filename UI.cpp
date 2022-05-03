@@ -222,20 +222,23 @@ void UI::startUI() {
 			catch (WishExcept& msg) {
 				cout << msg.getMessage() << " ";
 			}
+			cout << "Exista " << serv.get_all_from_wish().size() << " oferte in cos!\n";
 		}
 		else if (cmd == 13) {
 			serv.delete_from_wishlist();
 			cout << "Ofertele au fost sterse din wishlist!\n";
+			cout << "Exista " << serv.get_all_from_wish().size() << " oferte in cos!\n";
 		}
 		else if (cmd == 14) {
 			int number;
-			cout << "Introduceti numarul de oferte de generat";
+			cout << "Introduceti numarul de oferte de generat: ";
 			cin >> number;
 			if (number > serv.getAllService().size())
 			{
 				cout << "Nu sunt destule oferte de generat!\n";
 			}
 			else serv.generate_random_offers(number);
+			cout << "Exista " << serv.get_all_from_wish().size() << " oferte in cos!\n";
 		}
 		else if (cmd == 15) {
 			const auto& hohols = serv.getAllService();
@@ -254,6 +257,7 @@ void UI::startUI() {
 			cout << "Introduceti numele fisierului in care doriti sa salvati (nu uitati de extensia .html): ";
 			cin >> fileName;
 			serv.exporta_cos_HTML(fileName);
+			cout << "Exista " << serv.get_all_from_wish().size() << " oferte in cos!\n";
 		}
 		else if (cmd == 18) {
 			string denum;
@@ -312,7 +316,7 @@ void UI::startUI() {
 		}
 		else if (cmd == 22) {
 			serv.Undo();
-			std::cout << "Exista " << serv.getAllService().size() << " oferte";
+			std::cout << "Exista " << serv.getAllService().size() << " oferte\n";
 		}
 	}
 }
