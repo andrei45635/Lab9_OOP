@@ -1,4 +1,4 @@
-**Lab6_7**
+**Lab 6_7**
 
 **Agenție de turism**
 
@@ -41,4 +41,16 @@ Adăugați următoarele acțiuni (elemente de meniu):
 
 
  După fiecare acțiune utilizator se afișează numărul total al ofertelor din cos. ✔️ (redundant task, but w/e)
+ 
+ **Lab 8_9**
+ 
+Creați interfața grafica utilizator folosind Qt pentru aplicația la care lucrați.
+
+Cerințe:
+
+Ferestrele se creează din cod, fără designeri de ferestre, drag&drop etc.
+
+Toate funcționalitățile din aplicație trebuie sa fie accesibile folosind interfața utilizator. Alegeti voi funcționalitățile care sunt accesibile după prima iterație (minim 30% din totalul funcționalităților)
+
+Sa existe cel puțin 2 ferestre in aplicație.
 
